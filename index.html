@@ -12,6 +12,7 @@
         <meta charset="utf-8">
 		<title>McME – Minecraft Model Editor for Blockbuster Actors</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="effects.css" rel="stylesheet" type="text/css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 	
@@ -129,13 +130,14 @@ Swap Colors (X)"></div>
         
         <!-- Settings toolbar -->
         <div class="mc-toolbar mc-toolbar-right">
-            <div class="mc-tool mc-toggle-settings" title="Settings (S)">
+            <label class="mc-tool mc-toggle-settings" title="Settings (S)" for="mc-settings">
                 <i class="fa fa-cog fa-fw"></i>
-            </div>
+            </label>
         </div>
         
         <!-- Texture editor settings -->
-        <div class="mc-settings hidden">
+        <input type="checkbox" id="mc-settings" name="mc-settings" class="toggle-switch">
+        <div class="mc-settings">
             <h2>Texture Settings</h2>
             
             <div class="mc-settings-section">
