@@ -1,0 +1,72 @@
+/* Picker's styles */
+
+.mc-picker
+{
+    position: absolute;
+    top: 2em;
+    /*left: 1em;*/
+    margin-left: 0.5em;
+    /*display: inline-block;*/
+
+
+    /*width: 260px;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s ease 0s, margin-left 0.2s, opacity 0.2s;
+}
+
+.mc-picker-box
+{
+    position: relative;
+    top: 1.5em;
+    /*left: 1em;*/
+
+    background-color: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 0px 8px 8px 8px;
+    z-index: 10;
+
+    /*width: 260px;*/
+    padding: 10px;
+}
+
+.mc-picker-box:after,
+.mc-picker-box:before
+{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+
+    border: 6px solid transparent;
+    border-left: 6px solid #fff;
+    border-bottom: 6px solid #fff;
+    content: "";
+
+    display: block;
+}
+
+.mc-picker-box:before
+{
+    top: -12px;
+    left: -1px;
+
+    border-left: 6px solid #e8e8e8;
+    border-bottom: 6px solid #e8e8e8;
+}
+
+.mc-tool:hover .mc-picker {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 0em;
+}
+
+
+/* brush styles */
+.mc-pencil-brush {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mc-pencil-brush img {
+    display: block;
+}

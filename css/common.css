@@ -1,0 +1,11 @@
+.toggle-switch {
+    display: none;
+}
+
+.toggle-switch + * {
+    visibility: hidden;
+}
+
+.toggle-switch:checked + * {
+    visibility: visible;
+}

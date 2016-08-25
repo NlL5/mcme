@@ -1,0 +1,13 @@
+
+.mc-settings {
+    transition: visibility 0.2s ease 0s, right 0.3s ease 0s, opacity 0.2s;
+}
+.toggle-switch + .mc-settings {
+    right: -84px;
+    opacity: 0;
+}
+
+.toggle-switch:checked + .mc-settings {
+    right: 12px;
+    opacity: 1;
+}
