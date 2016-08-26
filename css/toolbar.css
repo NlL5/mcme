@@ -12,6 +12,10 @@
     /*width: 260px;*/
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: visibility 0.2s ease 0s, margin-left 0.2s, opacity 0.2s;
+    -moz-transition: visibility 0.2s ease 0s, margin-left 0.2s, opacity 0.2s;
+    -ms-transition: visibility 0.2s ease 0s, margin-left 0.2s, opacity 0.2s;
+    -o-transition: visibility 0.2s ease 0s, margin-left 0.2s, opacity 0.2s;
     transition: visibility 0.2s ease 0s, margin-left 0.2s, opacity 0.2s;
 }
 
