@@ -1,8 +1,12 @@
 # Fuck your .DS_Store files, OS X!
 .DS_Store
 
+# And the .directory too!
+.directory
+
 # Ignore build for a while
 /js/app.js
 
-#IDE stuff
+# IDE stuff
 .idea
+img/*.xcf
